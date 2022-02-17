@@ -1,0 +1,280 @@
+/* Resetear los estilos de HTML utilizamos el selector universal
+Elimina los valores predeterminados  */
+/* Fonts de google - online  */
+/* Regla + url */
+@import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
+
+
+
+
+
+/*Body*/
+body {
+    width:100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 5.6%;
+    font-family: "Spectral", serif;
+} 
+  
+  /* Header-- aqui inicia */
+header {
+    height: 135px; 
+    width: 100%;
+    margin-top: 15px;
+    background-color:white;
+}
+
+
+
+/*imagen del logo*/
+.logo {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-left: 15px;
+}    
+
+/*Nombre de la compañia*/
+/* Titulo */
+h1 {
+    color: #274c77;
+    text-align: left;
+    font-weight: 200;
+    font-style: normal;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 45px;
+    
+}
+
+/*texto debajo del nombre de la compañia*/
+.subtitulo {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    margin-right: 650px;
+    margin-top: -16px;
+    text-align: left;
+    color: #274c77;
+}
+
+/* Menu */
+.menu ul {
+    list-style-type: none;
+    margin: -20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    margin-left: 690px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 20px;  
+}
+
+li a:hover {
+    background-color: #d6efff;
+}
+/* Fin Header*/
+
+
+ /*Linea horizontal*/
+hr {
+    margin-top: -5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #a5a5a5;
+}
+
+.container {
+    font-size: 15px;
+    color: #798e94;
+    width: 600px;
+    margin: auto;
+    background-color: #38c744; 
+}
+
+.contacto{
+    border: 1px solid #CED5D7;
+    border-radius: 6px;
+    padding: 45px 45px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
+}
+.contacto label{
+    display: block;
+    font-weight: bold;
+}
+.contacto div{
+    margin-bottom: 15px;
+}
+ /* area de texto de la caja*/
+.contacto input[type='text'], .contacto textarea{
+    padding: 7px 6px;
+    width: 400px;
+    border: 1px solid #CED5D7;
+    resize: none;
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+}
+.contacto input[type='text']:focus, .contacto textarea:focus{
+    outline: none;
+    box-shadow:0 0 0 3px #dde9ec;
+}
+ /* boton*/
+.contacto input[type='submit']{
+    border: 1px solid #CED5D7;
+    box-shadow:0 0 0 3px #EEF5F7;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px white;
+ 
+    background: #e4f1f6;
+    background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #e4f1f6 0%,#cfe6ef 100%);
+}
+.contacto input[type='submit']:hover{
+    background: #edfcff;
+    background: -moz-linear-gradient(top, #edfcff 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #edfcff 0%,#cfe6ef 100%);
+}
+.contacto input[type='submit']:active{
+    background: #cfe6ef;
+    background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+    background: -webkit-linear-gradient(top, #cfe6ef 0%,#edfcff 100%);
+}
+
+ 
+/*Linea horizontal con clase*/ 
+.hr-ubicacion {
+    border-width: 1px;
+    border-style: solid;
+    border-color:#a5a5a5;
+    margin-top: 85px;
+} 
+ 
+ /* Section parrafo final*/
+.final{
+    height: 135px; 
+    width: 100%;
+    margin-top: 15px;
+    background-color:white;
+}
+
+
+/*Parrafo final*/
+/*titulo de la compañia*/
+/*Este lleva el logo a su izquierda*/
+/*Texto descriptivo de la compañia*/
+
+.logo-final {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-left: 15px;
+}    
+
+/*Nombre de la compañia*/
+/* Titulo */
+.titulo-final{
+    font-size: 45px;
+    margin: 37px 0px;
+    position:relative;
+    left:0%;
+    top:-60px;
+    display: inline-block;
+    font-weight: 200;
+    font-style: normal;
+    color: #023e8a;
+}
+
+.bio {
+    font-size: 20px;
+    width:425px;
+    height:113px;
+    border:hidden 2px;
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+    position:relative;
+    left: 40px;
+    top:-15px;
+    display: inline-block
+}
+/*iframe*/  
+.map{
+    position:relative;
+    left:95px;
+    top:-10px;
+    width: 459px;
+    height: 110px;
+}
+
+.hr-footer {
+    border-width: 1px;
+    border-style: solid;
+    border-color:#a5a5a5;
+    margin-top: 0px;
+}
+
+footer {
+    width: 100%;
+    background-color:#03045e;
+}
+
+/*Icon de facebook*/
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 20px;
+    border-radius: 50%;   
+}  
+
+.fa-envelope {
+    background: #e41203;
+    color: white;
+    position: absolute;
+    left: 10%;
+}
+
+.fa-phone {
+    background: #6beb91;
+    color: white;
+    position: absolute;
+    left: 45%;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    position: absolute;
+    left: 90%;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+/*Termina Parrafo final*/
+
+
+
+

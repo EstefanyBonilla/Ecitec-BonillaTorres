@@ -1,0 +1,381 @@
+ /* Resetear los estilos de HTML utilizamos el selector universal */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+ 
+/* Fonts de google - online  */
+@import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
+
+
+/*Body*/
+body {
+    width:100%;
+    height: auto;
+    font-family: "Spectral", serif;
+} 
+
+/* Header-- aqui inicia */
+header {
+    height: 135px; 
+    width: 100%;
+    margin-top: 15px;
+    color: #2266b9;
+}   
+
+/*imagen del logo
+.logo {
+    width: 120px;
+    height: 120px;
+    float: left;
+   
+}
+
+@media(max-width:120px) and(min-width:30px){
+    .logo{
+        float: left;
+    }
+
+}
+*/
+
+/*Nombre de la compañia*/
+/* Titulo */
+h1 {
+    font-weight: 300;
+    font-style: normal;
+    display:inline-block;
+    color: #0c4c8b;
+}
+h1:hover {
+    color: #216cc7;
+}
+
+
+
+/*texto debajo del nombre de la compañia*/
+p {
+    font-weight: 300;
+    font-style: italic;
+   
+}
+
+/* Menu */
+/*.menu {
+    width: 100%;
+    float: left;
+    text-align:right;
+    font-size: 20px;
+}
+
+
+
+.menu ul li {
+    display:inline-block;
+    list-style-type: none;
+    text-align: left;
+}
+
+
+.menu ul li a {
+    padding: 15px;
+    margin:auto 0 auto;
+    text-decoration: none;
+}
+ Fin Header*/
+
+
+/*Linea horizontal*/
+.hr-top {
+    border-width: 17px;
+    border-style: solid;
+    border-color:#07396b;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*imagen de fondo*/
+.img-presentacion {
+    background-image: url("src/assets/2.jpg");
+    background-size: cover;
+    height: 700px;
+    image-rendering: optimizeQuality;
+    width: 100%;
+}
+
+/*Animacion del texto sobre la imagen*/
+.animacion {
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
+}
+
+@keyframes fadeInDown {
+    from {
+        top: 27%;
+        left: 35%;
+    }
+    to {
+        top: 50%;
+        left: 35%;
+    }
+}
+/*Termina animacion*/
+
+
+/*texto sobre imagen de fondo*/
+.texto-img {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+
+/*Linea horizontal*/
+.hr-cuerpo {
+    border-width: 1px;
+    border-style: solid;
+    border-color:#07396b;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+/*Parrafo*/
+.one {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 0px;
+    color: white;
+    background-color:#07396b;   
+}
+
+/* Inicio de section de servicios*/
+.titulo-servicios {
+    font-size: 38px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/*Directorio de servicios*/
+/*Imagen del servicio*/
+div.servicios {
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    margin-left: 3.8%;
+    margin-top: -10px;
+}
+  
+div.servicios:hover {
+    border: 1px solid #777;
+}
+  
+div.servicios{
+    width: 250px;
+    height: 200px;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+/*fin de section*/
+
+/*Linea horizontal con clase*/ 
+.hr-cotizacion {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    margin-top: 380px;
+}
+
+section.cotizacion {
+    height: 125px; 
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color:#fff;
+}
+
+/* texto de cotizacion*/
+.text-cotizacion {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(10, 10, 10);
+    background-color: #fff;
+}
+
+/*Boton de cotizacion*/
+.button {
+    display: block;
+    width: 130px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px auto;
+    background: #039df7;
+    font: bold 25px "Spectral", serif;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+
+    background-image: -webkit-linear-gradient(top, #039df7, #0e3258);
+    background-image: -moz-linear-gradient(top, #039df7, #0e3258);
+    background-image: -ms-linear-gradient(top, #039df7, #0e3258);
+    background-image: -o-linear-gradient(top, #039df7, #0e3258);
+    background-image: linear-gradient(to bottom, #039df7, #0e3258);
+
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+}
+
+
+.button:hover {
+    background: #0e3258;
+    background-image: -webkit-linear-gradient(top, #0e3258, #039df7);
+    background-image: -moz-linear-gradient(top, #0e3258, #039df7);
+    background-image: -ms-linear-gradient(top, #0e3258, #039df7);
+    background-image: -o-linear-gradient(top, #0e3258, #039df7);
+    background-image: linear-gradient(to bottom, #0e3258, #039df7);
+    text-decoration: none;
+}
+
+.animation {
+    animation: headShake;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+/*Termina Boton*/
+
+/*Linea horizontal con clase*/ 
+.hr-ubicacion{
+    border-width: 1px;
+    border-style: solid;
+    border-color:#a5a5a5;
+    margin-top: 15px;
+}
+
+/* Section parrafo final*/
+.final{
+    height: 135px; 
+    width: 100%;
+    margin-top: 15px;
+    background-color:white;
+}
+
+/*Logo
+.logo-final {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-left: 15px;
+    
+}    
+*/
+/*Nombre de la compañia*/
+/* Titulo */
+.titulo-final{
+    font-size: 45px;
+    margin: 37px 0px;
+    position:relative;
+    left:0%;
+    top:-60px;
+    display: inline-block;
+    font-weight: 200;
+    font-style: normal;
+    color: #274c77;
+}
+
+/*Texto descriptivo de la compañia*/
+.bio {
+    font-size: 20px;
+    width:425px;
+    height:113px;
+    border:hidden 2px;
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+    position:relative;
+    left: 40px;
+    top:-15px;
+    display: inline-block
+
+}
+
+/*iframe*/  
+.map{
+    position:relative;
+    left:95px;
+    top:-10px;
+    width: 459px;
+    height: 110px;
+    border: 1px solid #777;
+}
+
+/*Linea horizontal con clase*/
+.hr-footer {
+    border-width: 1px;
+    border-style: solid;
+    border-color:#a5a5a5;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer {
+
+    width: 1259px;
+    height: 60px;
+    border: 2px solid #dcdfe2;
+    background-color: #dcdfe2;
+
+}
+
+/*Icon de facebook*/
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 20px;
+    border-radius: 50%;   
+}  
+
+.fa-envelope {
+    background: #e41203;
+    color: white;
+    position: absolute;
+    left: 10%;
+}
+
+.fa-phone {
+    background: #6beb91;
+    color: white;
+    position: absolute;
+    left: 45%;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    position: absolute;
+    left: 90%;
+}
+
+
+.fa:hover {
+    opacity: 0.8;
+}
+/*Termina Parrafo final*/
+
+
+
+

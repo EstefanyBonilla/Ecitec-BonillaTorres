@@ -1,0 +1,306 @@
+/* Resetear los estilos de HTML utilizamos el selector universal
+Elimina los valores predeterminados  */
+/* Fonts de google - online  */
+/* Regla + url */
+@import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
+
+
+
+
+
+/*Body*/
+
+
+body {
+    width:100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 5.6%;
+    font-family: "Spectral", serif;
+} 
+  
+  /* Header-- aqui inicia */
+header {
+    height: 135px; 
+    width: 100%;
+    margin-top: 15px;
+    background-color:white;
+}
+
+
+
+/*imagen del logo*/
+.logo {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-left: 15px;
+}    
+
+/*Nombre de la compañia*/
+/* Titulo */
+h1 {
+    color: #274c77;
+    text-align: left;
+    font-weight: 200;
+    font-style: normal;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 45px;
+    
+
+}
+
+/*texto debajo del nombre de la compañia*/
+.subtitulo {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    margin-right: 650px;
+    margin-top: -16px;
+    text-align: left;
+    color: #274c77;
+}
+
+/* Menu */
+.menu ul {
+    list-style-type: none;
+    margin: -20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    margin-left: 690px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 20px;
+    
+}
+
+li a:hover {
+    background-color: #d6efff;
+}
+/* Fin Header*/
+
+/*Linea horizontal*/
+hr {
+    border: 1px solid;
+    border-color: #a5a5a5;
+}
+
+
+/* Inicio de section */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.container img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/*Linea horizontal con clase*/ 
+hr.linea-cotizacion {
+    border-width: 1px;
+    border-style: solid;
+    border-color: a5a5a5;
+    margin-top: 380px;
+}
+
+
+section.cotizacion {
+    height: 125px; 
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color:#fff;
+}
+
+
+/* texto de cotizacion*/
+.text-cotizacion {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(10, 10, 10);
+    background-color: #fff;
+}
+
+
+/*Boton de cotizacion*/
+.button {
+    display: block;
+    width: 130px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px auto;
+    background: #039df7;
+    font: bold 25px "Spectral", serif;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+
+    background-image: -webkit-linear-gradient(top, #039df7, #0e3258);
+    background-image: -moz-linear-gradient(top, #039df7, #0e3258);
+    background-image: -ms-linear-gradient(top, #039df7, #0e3258);
+    background-image: -o-linear-gradient(top, #039df7, #0e3258);
+    background-image: linear-gradient(to bottom, #039df7, #0e3258);
+
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+}
+
+
+.button:hover {
+    background: #0e3258;
+    background-image: -webkit-linear-gradient(top, #0e3258, #039df7);
+    background-image: -moz-linear-gradient(top, #0e3258, #039df7);
+    background-image: -ms-linear-gradient(top, #0e3258, #039df7);
+    background-image: -o-linear-gradient(top, #0e3258, #039df7);
+    background-image: linear-gradient(to bottom, #0e3258, #039df7);
+    text-decoration: none;
+}
+/*Termina Boton*/
+
+/*Linea horizontal con clase*/ 
+.hr-ubicacion {
+    border-width: 1px;
+    border-style: solid;
+    border-color:#a5a5a5;
+    margin-top: 15px;
+    
+    
+}
+
+/* Section parrafo final*/
+.final{
+    height: 135px; 
+    width: 100%;
+    margin-top: 15px;
+    background-color:white;
+}
+
+    
+/*Parrafo final*/
+/*titulo de la compañia*/
+/*Este lleva el logo a su izquierda*/
+/*Texto descriptivo de la compañia*/
+
+.logo-final {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-left: 15px;
+}    
+
+/*Nombre de la compañia*/
+/* Titulo */
+.titulo-final{
+    font-size: 45px;
+    margin: 37px 0px;
+    position:relative;
+    left:0%;
+    top:-60px;
+    display: inline-block;
+    font-weight: 200;
+    font-style: normal;
+    color: #023e8a;
+}
+
+.bio {
+    font-size: 20px;
+    width:425px;
+    height:113px;
+    border:hidden 2px;
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+    position:relative;
+    left: 40px;
+    top:-15px;
+    display: inline-block
+
+}
+
+/*iframe*/  
+.map{
+    position:relative;
+    left:95px;
+    top:-10px;
+    width: 459px;
+    height: 110px;
+}
+
+
+.hr-footer {
+    border-width: 2px;
+    border-style: solid;
+    border-color:#a5a5a5;
+    margin-top: 0px;
+    
+}
+
+footer {
+    width: 100%;
+    background-color:#03045e;
+}
+
+/*Icon de facebook*/
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 20px;
+    border-radius: 50%;   
+}  
+
+.fa-envelope {
+    background: #e41203;
+    color: white;
+    position: absolute;
+    left: 10%;
+}
+
+.fa-phone {
+    background: #6beb91;
+    color: white;
+    position: absolute;
+    left: 45%;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    position: absolute;
+    left: 90%;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+/*Termina Parrafo final*/
+
+
+
+
